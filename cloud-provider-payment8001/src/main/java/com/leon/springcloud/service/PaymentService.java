@@ -4,7 +4,7 @@ import com.leon.springcloud.entities.Payment;
 import org.apache.ibatis.annotations.Param;
 
 public interface PaymentService {
-    public int create(Payment payment);
+    int create(Payment payment);
 
-    public Payment getPaymentById(Long id);
+    Payment getPaymentById(Long id);
 }
