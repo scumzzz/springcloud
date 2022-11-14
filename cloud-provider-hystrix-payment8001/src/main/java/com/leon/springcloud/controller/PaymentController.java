@@ -32,4 +32,10 @@ public class PaymentController {
         log.info("*********result:" + result);
         return result;
     }
+    @RequestMapping(value = "/payment/circuit")
+    public String paymentCircuitBreaker(@RequestParam Integer id) {
+        String result = paymentService.PaymentCircuitBreaker(id);
+        log.info("******result: " + result);
+        return result;
+    }
 }
